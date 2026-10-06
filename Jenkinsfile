@@ -12,7 +12,8 @@ pipeline {
         stage('Install') {
             steps {
                 bat '''
-                    py -m venv .venv
+                    C:\Users\Hardik Master\AppData\Local\Microsoft\WindowsApps\python.exe
+                    -m venv .venv
                     .venv\\Scripts\\python.exe -m pip install --upgrade pip
                     .venv\\Scripts\\python.exe -m pip install -r requirements.txt
                 '''
